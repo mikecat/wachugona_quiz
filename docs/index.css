@@ -1,0 +1,72 @@
+body {
+	text-align: center;
+}
+
+#mainarea {
+	display: inline-block;
+	padding: 0.5em;
+}
+
+#title {
+	font-size: 200%;
+	margin: 0;
+	padding: 0;
+}
+
+#questionCountArea {
+	margin-top: 0.5em;
+}
+
+#queryAreaWrapper {
+	margin: 1em 0;
+}
+
+#queryArea {
+	font-size: 180%;
+}
+
+#buttonArea {
+	display: grid;
+	grid-auto-flow: row;
+}
+
+button {
+	font-size: 100%;
+	padding: 0.5em;
+	margin-top: 1em;
+}
+
+#confusionMatrixArea {
+	margin-top: 1em;
+}
+
+#answerDetailArea {
+	margin-top: 1em;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+.removed {
+	display: none;
+}
+
+table {
+	border-collapse: collapse;
+	display: inline-table;
+}
+
+th, td {
+	border: 1px solid currentColor;
+	padding: 0.2em;
+}
+
+tr.wrong {
+	background-color: lightpink;
+}
+
+td.verticalLabel {
+	writing-mode: vertical-rl;
+	width: 1.4em;
+}
