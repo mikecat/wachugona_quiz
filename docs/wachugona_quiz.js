@@ -353,6 +353,15 @@ window.addEventListener("DOMContentLoaded", () => {
 		}
 	}
 
+	window.addEventListener("beforeunload", (event) => {
+		if (mode !== "title" && mode !== "result-shared") {
+			// クイズ中・結果表示中のリロード・ページ遷移に対し警告を出す
+			event.preventDefault();
+			event.returnValue = "";
+			return "";
+		}
+	});
+
 	window.addEventListener("hashchange", tryLoadHash);
 	tryLoadHash();
 });
