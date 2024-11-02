@@ -28,6 +28,7 @@ body {
 #buttonArea {
 	display: grid;
 	grid-auto-flow: row;
+	margin-bottom: 1em;
 }
 
 button {
@@ -42,6 +43,11 @@ button {
 
 #answerDetailArea {
 	margin-top: 1em;
+}
+
+#githubLinkArea {
+	font-size: small;
+	opacity: 0.7;
 }
 
 .hidden {
